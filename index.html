@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəsmi Keçidlər və Portallar | Mərkəzi Giriş</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            --card-bg: rgba(255, 255, 255, 0.07);
+            --card-hover: rgba(255, 255, 255, 0.15);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .portal-container {
+            width: 100%;
+            max-width: 540px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Profile Header */
+        .profile-header {
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #fff;
+            margin: 0 auto 1.2rem;
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Links Section */
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .portal-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .portal-link:hover {
+            background: var(--card-hover);
+            transform: translateY(-3px);
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .link-content i {
+            font-size: 1.2rem;
+            color: var(--accent);
+            width: 24px;
+            text-align: center;
+        }
+
+        .link-arrow {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .portal-link:hover .link-arrow {
+            color: var(--text-main);
+            transform: translateX(3px);
+        }
+
+        /* Social Icons Row */
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background: var(--accent);
+            color: #0f172a;
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .portal-link {
+                padding: 0.9rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portal-container">
+        <!-- Profil Başlığı -->
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <i class="fas fa-compass"></i>
+            </div>
+            <h1>Rəsmi Portallar və Səhifələr</h1>
+            <p>Bütün layihələrimizə, xidmətlərimizə və sosial media hesablarımıza bir mərkəzdən sürətli keçid.</p>
+        </div>
+
+        <!-- Əsas Keçidlər (Saytlar və Layihələr) -->
+        <div class="links-list">
+            <!-- 1-ci Sayt / Layihə -->
+            <a href="BURAYA_BIRINCI_SAYTIN_LINKINI_YAZIN" target="_blank" class="portal-link">
+                <div class="link-content">
+                    <i class="fas fa-child"></i>
+                    <span>Uşaq və Yeniyetmə Psixologiyası</span>
+                </div>
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+
+            <!-- 2-ci Sayt / Layihə -->
+            <a href="BURAYA_IKINCI_SAYTIN_LINKINI_YAZIN" target="_blank" class="portal-link">
+                <div class="link-content">
+                    <i class="fas fa-globe"></i>
+                    <span>Digər Layihə / Veb Səhifə</span>
+                </div>
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+
+            <!-- İnstagram Səhifəsi 1 -->
+            <a href="https://instagram.com/INSTAGRAM_HESABINIZ" target="_blank" class="portal-link">
+                <div class="link-content">
+                    <i class="fab fa-instagram"></i>
+                    <span>Psixologiya Instagram Səhifəsi</span>
+                </div>
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+
+            <!-- İnstagram Səhifəsi 2 və ya Digər Keçid -->
+            <a href="https://instagram.com/DIGER_INSTAGRAM" target="_blank" class="portal-link">
+                <div class="link-content">
+                    <i class="fab fa-instagram"></i>
+                    <span>Digər Instagram Səhifəmiz</span>
+                </div>
+                <i class="fas fa-chevron-right link-arrow"></i>
+            </a>
+        </div>
+
+        <!-- Sosial Media Düymələri -->
+        <div class="social-row">
+            <a href="https://instagram.com/SİZİN_HESAB" target="_blank" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/SİZİN_TELEGRAM" target="_blank" class="social-btn" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="mailto:email@domain.com" class="social-btn" title="E-poçt"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+994501234567" class="social-btn" title="Zəng"><i class="fas fa-phone-alt"></i></a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Bütün hüquqlar qorunur.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
